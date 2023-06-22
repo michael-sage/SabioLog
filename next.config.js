@@ -9,6 +9,7 @@ module.exports = {
       ...config.resolve.alias,
       '~': __dirname,
     };
+    future: { webpack5: true };
     return config;
   }
 };
