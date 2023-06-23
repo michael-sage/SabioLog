@@ -10,9 +10,6 @@ const Home = (props: {
   readme: string;
   posts: PostData[];
 }) => {
-
-  console.log(props.posts);
-  
   return (
     <div className="content">
       <Head>
@@ -42,46 +39,9 @@ const Home = (props: {
         <h2>Testimonials</h2>
         <blockquote>
           <p>
-            <em>Seems like it might be useful!</em>
-          </p>
-          <p>
-            — Dan Abramov, taken{' '}
-            <a
-              href="https://github.com/colinhacks/devii/issues/2"
-              target="_blank"
-            >
-              {' '}
-              utterly out of context
-            </a>
+           Coming soon...
           </p>
         </blockquote>
-      </div>
-
-      {/* <div className="section">
-        <h2>README.md</h2>
-        <p>
-          Below is the README.md for devii. It was imported and rendered using
-          Next.js dynamic imports. The rest of this page (including this
-          paragraph) are rendered with React. You can also read the README on
-          GitHub at{' '}
-          <a href="https://github.com/colinhacks/devii">
-            https://github.com/colinhacks/devii
-          </a>
-          .
-        </p>
-      </div> */}
-
-      {/* <div className="section alternate">
-        <div className="narrow">
-          <Markdown source={props.readme} />
-        </div>
-      </div> */}
-
-      <div className="section alternate">
-        <h2 className="centered">Get started</h2>
-        <a href="https://github.com/colinhacks/devii">
-          <button className="fork-button">Go to README</button>
-        </a>
       </div>
     </div>
   );
