@@ -7,7 +7,7 @@ export namespace globals {
   export const email = 'michael.sage@sabiosol.com';
   export const url = 'https://sabiolog.dev';
   export const accentColor = '#82c13f';
-  export const googleAnalyticsId = ``; // e.g. 'UA-999999999-1'
+  export const googleAnalyticsId = `G-NWMFP2B1ZV`; // e.g. 'UA-999999999-1'
   export const colours = {
     primary: '#82c13f',
     secondary: '#176aa6',
