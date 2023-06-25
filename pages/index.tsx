@@ -3,6 +3,7 @@ import { generateRSS } from '../rssUtil';
 import { Markdown } from '../components/Markdown';
 import { PostData, loadBlogPosts, loadMarkdownFile } from '../loader';
 import PostCards from '../components/PostCards';
+import { generateSitemap } from '../sitemap';
 
 const Home = (props: {
   introduction: string;
@@ -58,6 +59,7 @@ export const getStaticProps = async () => {
 
   // comment out to turn off RSS generation during build step.
   await generateRSS(posts);
+  await generateSitemap();
 
   const props = {
     introduction: introduction.contents,
