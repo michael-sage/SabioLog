@@ -4,18 +4,19 @@ import { Footer } from '../components/Footer';
 import { globals } from '../globals';
 import { Header } from '../components/Header';
 import '../styles/base.css';
+import Script from 'next/script';
 
 const App: React.FC = ({ Component, pageProps }: any) => {
   return (
     <div className="container">
       <Head>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4091280539840115"
-     crossOrigin="anonymous"></script>
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4091280539840115"
+     crossOrigin="anonymous"></Script>
         {globals.googleAnalyticsId && (
-          <script async src={`https://www.googletagmanager.com/gtag/js?id=${globals.googleAnalyticsId}`}></script>
+          <Script async src={`https://www.googletagmanager.com/gtag/js?id=${globals.googleAnalyticsId}`}></Script>
         )}
         {globals.googleAnalyticsId && (
-          <script dangerouslySetInnerHTML={{
+          <Script dangerouslySetInnerHTML={{
               __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -23,7 +24,7 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 
             gtag('globals', '${globals.googleAnalyticsId}');
             `,
-          }}></script>
+          }}></Script>
         )}
       </Head>
       <Header />
