@@ -15,5 +15,6 @@ export namespace globals {
     sageGreen: '#88A57D',
     linkBlue: '#176aa6',
     black: '#000000',
+    white: '#ffffff',
   };
 }
