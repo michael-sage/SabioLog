@@ -1,9 +1,10 @@
 import React from 'react'
+import ComingSoon from '../../components/ComingSoon';
 
-const BlogPage = () => {
+const BlogsPage = () => {
   return (
-    <div>BlogPage</div>
+    <ComingSoon />
   )
 };
 
-export default BlogPage;
+export default BlogsPage;
