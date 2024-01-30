@@ -1,6 +1,7 @@
 import React from 'react';
 import { format } from 'fecha';
 import { PostData } from '../loader';
+import Image from 'next/image';
 
 export const FollowButton = () => {
   return (
@@ -15,7 +16,7 @@ export const Author: React.FC<{ post: PostData }> = (props) => {
     <div className="author-container">
       <div className="author">
         {props.post.authorPhoto && (
-          <img src={props.post.authorPhoto} className="author-image" />
+          <Image src={props.post.authorPhoto} className="author-image" alt={`image of ${props.post.author}, the author`} />
         )}
         <AuthorLines post={props.post} />
       </div>
